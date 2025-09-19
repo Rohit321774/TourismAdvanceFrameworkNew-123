@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test  name="TestRunner-Firefox">
+   <parameter name="BROWSER" value="FireFox" />
+    <classes>
+      <class name="com.comcast.tourismUsertest.LoginAsAdminTest"/>
+      <class name="com.comcast.tourismUsertest.SignUpAsNewUserTest"/>
+    </classes>
+  </test>
+  <test  name="TestRunner-Chrome">
+  <parameter name="BROWSER"  value="chrome"/>
+    <classes>
+      <class name="com.comcast.tourismUsertest.ToChangePasswordTest"/>
+      <class name="com.comcast.tourismUsertest.SignInAsExistingUserTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
