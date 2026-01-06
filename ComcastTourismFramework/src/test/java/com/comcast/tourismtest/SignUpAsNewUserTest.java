@@ -46,7 +46,7 @@ WebDriver driver=new ChromeDriver();
     wb.toLoadPage(driver);
    SignUp hm=new SignUp(driver);
 		hm.loginASnewUser(url, FullName, MobileNumber, Email, Password);
-
+Thread.sleep(1000);
 		String header=driver.findElement(By.xpath("//h4[text()='  Info successfully submited ']")).toString();
 			if(header.contains("  Info successfully submited "))
 			{
